@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 52432650}
   m_Layer: 3
   m_Name: Art_Accessory
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 146828440}
   m_Layer: 0
   m_Name: Strawberry
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -973,7 +973,7 @@ GameObject:
   - component: {fileID: 310198837}
   m_Layer: 3
   m_Name: Art
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1094,7 @@ GameObject:
   - component: {fileID: 323598100}
   - component: {fileID: 323598098}
   - component: {fileID: 323598099}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: FlagParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1933,7 +1933,7 @@ ParticleSystem:
           m_PostInfinity: 2
           m_RotationOrder: 4
   EmissionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
@@ -7265,9 +7265,10 @@ GameObject:
   - component: {fileID: 1032677936}
   - component: {fileID: 1032677940}
   - component: {fileID: 1032677941}
+  - component: {fileID: 1032677942}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7376,6 +7377,33 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 2
   gravity: -45.09
+--- !u!54 &1032677942
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032677935}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1145735558
 GameObject:
   m_ObjectHideFlags: 0
@@ -7531,7 +7559,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awakeEvent:
     m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 323598098}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1168457223}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
@@ -7539,26 +7582,32 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: Grow
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 323598098}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: FlageParticles
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
+--- !u!65 &1168457227
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168457219}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.64, y: 0.64, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1176455757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,6 +9370,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3100196504199282228, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100196504199282228, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
+      propertyPath: m_Size.y
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 3100196504199282228, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -9370,7 +9427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
       propertyPath: m_Layer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9385,6 +9442,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1168457224}
+    - targetCorrespondingSourceObject: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1168457227}
   m_SourcePrefab: {fileID: 100100000, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
 --- !u!1001 &7282822810138178293
 PrefabInstance:
