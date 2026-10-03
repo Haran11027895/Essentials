@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 159727550}
   - component: {fileID: 159727549}
   - component: {fileID: 159727552}
+  - component: {fileID: 159727553}
   m_Layer: 0
   m_Name: Duck
   m_TagString: Untagged
@@ -632,6 +633,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &159727553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159727548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7c4c067838ab4f4daf3ceea190e0b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  awakeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &177867794
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,7 +992,7 @@ GameObject:
   - component: {fileID: 310198837}
   m_Layer: 3
   m_Name: Art
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,7 +1113,7 @@ GameObject:
   - component: {fileID: 323598100}
   - component: {fileID: 323598098}
   - component: {fileID: 323598099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FlagParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7268,7 +7287,7 @@ GameObject:
   - component: {fileID: 1032677942}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7587,27 +7606,6 @@ MonoBehaviour:
           m_StringArgument: Grow
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &1168457227
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1168457219}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 0.64, y: 0.64, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1176455757
 GameObject:
   m_ObjectHideFlags: 0
@@ -9427,7 +9425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9442,9 +9440,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1168457224}
-    - targetCorrespondingSourceObject: {fileID: 9165313636607540375, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1168457227}
   m_SourcePrefab: {fileID: 100100000, guid: 2b1d2f152edb52e409b38d5c069f75fb, type: 3}
 --- !u!1001 &7282822810138178293
 PrefabInstance:
