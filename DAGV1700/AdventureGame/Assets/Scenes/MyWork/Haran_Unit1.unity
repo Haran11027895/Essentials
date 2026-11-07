@@ -1184,6 +1184,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &310198833
 GameObject:
   m_ObjectHideFlags: 0
@@ -11466,6 +11478,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireworkRocket
       objectReference: {fileID: 0}
+    - target: {fileID: 856141972029527281, guid: 4db095ac28004cf4c895d0a0e61fbb38, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4476912992412027715, guid: 4db095ac28004cf4c895d0a0e61fbb38, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5250950701208507991, guid: 4db095ac28004cf4c895d0a0e61fbb38, type: 3}
       propertyPath: SubModule.enabled
       value: 1
@@ -11523,7 +11543,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4476912992412027715, guid: 4db095ac28004cf4c895d0a0e61fbb38, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7502342555906531555, guid: 4db095ac28004cf4c895d0a0e61fbb38, type: 3}
       insertIndex: -1
@@ -11677,38 +11698,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1740575303}
     m_Modifications:
-    - target: {fileID: 988555317313281734, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 988555317313281734, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 988555317313281734, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 988555317313281734, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 988555317313281734, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459285108407834598, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459285108407834598, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1459285108407834598, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1459285108407834598, guid: 69be5aed0d19bdd419f4560aa78f6021, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
